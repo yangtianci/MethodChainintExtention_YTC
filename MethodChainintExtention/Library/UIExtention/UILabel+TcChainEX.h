@@ -16,7 +16,7 @@
 
 -(UILabel *(^)(UIColor *))tc_BGColor;
 
--(UILabel *(^)(NSInteger *))tc_Tag;
+-(UILabel *(^)(NSInteger))tc_Tag;
 
 -(UILabel *(^)(NSString *))tc_Text;
 
