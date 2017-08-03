@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import "UILabel+TcChainEX.h"
+
 @interface ViewController ()
 
 @end
@@ -16,8 +18,35 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.view.backgroundColor = [UIColor lightGrayColor];
+    
+    [self ConfigurationUI];
+    
 }
+
+-(void)ConfigurationUI{
+    
+    //label测试
+    
+    
+    UILabel *fir = [UILabel LabelWithCallBack:^(UILabel *label) {
+       label.setText(@"label").setTextColor([UIColor brownColor]).setFontSize(30).setFrame(20,20,200,50).setAlign(NSTextAlignmentCenter);
+    }];
+    [self.view addSubview:fir];
+
+    
+    
+    UILabel *firT = [[UILabel alloc]init];
+    [self.view addSubview:firT];
+    firT.setText(@"label").setTextColor([UIColor brownColor]).setFontSize(30).setFrame(20,20,200,50).setAlign(NSTextAlignmentCenter);
+    
+    
+    
+    
+    
+}
+
 
 
 - (void)didReceiveMemoryWarning {

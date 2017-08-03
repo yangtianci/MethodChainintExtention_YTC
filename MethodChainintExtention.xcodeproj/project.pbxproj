@@ -13,6 +13,7 @@
 		720B3C241F3315F500CDC61F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 720B3C221F3315F500CDC61F /* Main.storyboard */; };
 		720B3C261F3315F500CDC61F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 720B3C251F3315F500CDC61F /* Assets.xcassets */; };
 		720B3C291F3315F500CDC61F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 720B3C271F3315F500CDC61F /* LaunchScreen.storyboard */; };
+		720B3C341F33167100CDC61F /* UILabel+TcChainEX.m in Sources */ = {isa = PBXBuildFile; fileRef = 720B3C331F33167100CDC61F /* UILabel+TcChainEX.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		720B3C251F3315F500CDC61F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		720B3C281F3315F500CDC61F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		720B3C2A1F3315F500CDC61F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		720B3C321F33167100CDC61F /* UILabel+TcChainEX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+TcChainEX.h"; sourceTree = "<group>"; };
+		720B3C331F33167100CDC61F /* UILabel+TcChainEX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+TcChainEX.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		720B3C181F3315F500CDC61F /* MethodChainintExtention */ = {
 			isa = PBXGroup;
 			children = (
+				720B3C301F33167100CDC61F /* Library */,
 				720B3C1C1F3315F500CDC61F /* AppDelegate.h */,
 				720B3C1D1F3315F500CDC61F /* AppDelegate.m */,
 				720B3C1F1F3315F500CDC61F /* ViewController.h */,
@@ -77,6 +81,23 @@
 				720B3C1A1F3315F500CDC61F /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		720B3C301F33167100CDC61F /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				720B3C311F33167100CDC61F /* UIExtention */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		720B3C311F33167100CDC61F /* UIExtention */ = {
+			isa = PBXGroup;
+			children = (
+				720B3C321F33167100CDC61F /* UILabel+TcChainEX.h */,
+				720B3C331F33167100CDC61F /* UILabel+TcChainEX.m */,
+			);
+			path = UIExtention;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +174,7 @@
 			files = (
 				720B3C211F3315F500CDC61F /* ViewController.m in Sources */,
 				720B3C1E1F3315F500CDC61F /* AppDelegate.m in Sources */,
+				720B3C341F33167100CDC61F /* UILabel+TcChainEX.m in Sources */,
 				720B3C1B1F3315F500CDC61F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,6 +334,7 @@
 				720B3C2F1F3315F500CDC61F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
