@@ -14,6 +14,7 @@
 		720B3C261F3315F500CDC61F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 720B3C251F3315F500CDC61F /* Assets.xcassets */; };
 		720B3C291F3315F500CDC61F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 720B3C271F3315F500CDC61F /* LaunchScreen.storyboard */; };
 		720B3C341F33167100CDC61F /* UILabel+TcChainEX.m in Sources */ = {isa = PBXBuildFile; fileRef = 720B3C331F33167100CDC61F /* UILabel+TcChainEX.m */; };
+		720B3C371F3320D000CDC61F /* UIImageView+TcChainEX.m in Sources */ = {isa = PBXBuildFile; fileRef = 720B3C361F3320D000CDC61F /* UIImageView+TcChainEX.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		720B3C2A1F3315F500CDC61F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		720B3C321F33167100CDC61F /* UILabel+TcChainEX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+TcChainEX.h"; sourceTree = "<group>"; };
 		720B3C331F33167100CDC61F /* UILabel+TcChainEX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+TcChainEX.m"; sourceTree = "<group>"; };
+		720B3C351F3320D000CDC61F /* UIImageView+TcChainEX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+TcChainEX.h"; sourceTree = "<group>"; };
+		720B3C361F3320D000CDC61F /* UIImageView+TcChainEX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+TcChainEX.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +99,8 @@
 			children = (
 				720B3C321F33167100CDC61F /* UILabel+TcChainEX.h */,
 				720B3C331F33167100CDC61F /* UILabel+TcChainEX.m */,
+				720B3C351F3320D000CDC61F /* UIImageView+TcChainEX.h */,
+				720B3C361F3320D000CDC61F /* UIImageView+TcChainEX.m */,
 			);
 			path = UIExtention;
 			sourceTree = "<group>";
@@ -173,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				720B3C211F3315F500CDC61F /* ViewController.m in Sources */,
+				720B3C371F3320D000CDC61F /* UIImageView+TcChainEX.m in Sources */,
 				720B3C1E1F3315F500CDC61F /* AppDelegate.m in Sources */,
 				720B3C341F33167100CDC61F /* UILabel+TcChainEX.m in Sources */,
 				720B3C1B1F3315F500CDC61F /* main.m in Sources */,

@@ -17,22 +17,7 @@
     return label;
 }
 
-
--(UILabel *(^)(NSString *))setText{
-    return ^UILabel*(NSString *text){
-        self.text = text;
-        return self;
-    };
-}
-
--(UILabel *(^)(UIColor *))setTextColor{
-    return ^UILabel*(UIColor *color){
-        self.textColor = color;
-        return self;
-    };
-}
-
--(UILabel *(^)(CGFloat, CGFloat, CGFloat, CGFloat))setFrame{
+-(UILabel *(^)(CGFloat, CGFloat, CGFloat, CGFloat))tc_Frame{
     
     return ^UILabel *(CGFloat x, CGFloat y, CGFloat width, CGFloat height){
         self.frame = CGRectMake(x, y, width, height);
@@ -40,14 +25,44 @@
     };
 }
 
--(UILabel *(^)(NSInteger))setFontSize{
+-(UILabel *(^)(UIColor *))tc_BGColor{
+    return ^UILabel*(UIColor *color){
+        self.backgroundColor = color;
+        return self;
+    };
+}
+
+-(UILabel *(^)(NSInteger))tc_Tag{
+    return ^UILabel*(NSInteger tag){
+        self.tag = tag;
+        return self;
+    };
+}
+
+
+-(UILabel *(^)(NSString *))tc_Text{
+    return ^UILabel*(NSString *text){
+        self.text = text;
+        return self;
+    };
+}
+
+-(UILabel *(^)(UIColor *))tc_TextColor{
+    return ^UILabel*(UIColor *color){
+        self.textColor = color;
+        return self;
+    };
+}
+
+
+-(UILabel *(^)(NSInteger))tc_FontSize{
     return ^UILabel*(NSInteger fontSize){
         self.font = [UIFont systemFontOfSize:fontSize];
         return self;
     };
 }
 
--(UILabel *(^)(NSTextAlignment))setAlign{
+-(UILabel *(^)(NSTextAlignment))tc_Align{
     return ^UILabel*(NSTextAlignment align){
         self.textAlignment = align;
         return self;

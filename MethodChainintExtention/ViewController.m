@@ -28,18 +28,22 @@
 -(void)ConfigurationUI{
     
     //label测试
-    
-    
     UILabel *fir = [UILabel LabelWithCallBack:^(UILabel *label) {
-       label.setText(@"label").setTextColor([UIColor brownColor]).setFontSize(30).setFrame(20,20,200,50).setAlign(NSTextAlignmentCenter);
+        label.tc_Text(@"akkgkarg").tc_Align(NSTextAlignmentCenter).tc_Frame(10,10,100,100).tc_TextColor([UIColor redColor]);
     }];
     [self.view addSubview:fir];
-
     
     
-    UILabel *firT = [[UILabel alloc]init];
-    [self.view addSubview:firT];
-    firT.setText(@"label").setTextColor([UIColor brownColor]).setFontSize(30).setFrame(20,20,200,50).setAlign(NSTextAlignmentCenter);
+    
+    //ImgView
+    UIImageView *imgV = [[UIImageView alloc]init];
+    
+    imgV.contentMode = UIViewContentModeTop;
+    
+    
+    
+    
+    
     
     
     

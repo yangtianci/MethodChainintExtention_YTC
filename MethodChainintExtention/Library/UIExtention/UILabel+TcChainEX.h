@@ -12,14 +12,19 @@
 
 +(UILabel*)LabelWithCallBack:(void(^)(UILabel *label))callBack;
 
--(UILabel *(^)(NSString *))setText;
+-(UILabel *(^)(CGFloat, CGFloat, CGFloat, CGFloat))tc_Frame;
 
--(UILabel *(^)(UIColor *))setTextColor;
+-(UILabel *(^)(UIColor *))tc_BGColor;
 
--(UILabel *(^)(CGFloat, CGFloat, CGFloat, CGFloat))setFrame;
+-(UILabel *(^)(NSInteger *))tc_Tag;
 
--(UILabel *(^)(NSInteger))setFontSize;
+-(UILabel *(^)(NSString *))tc_Text;
 
--(UILabel *(^)(NSTextAlignment))setAlign;
+-(UILabel *(^)(UIColor *))tc_TextColor;
+
+-(UILabel *(^)(NSInteger))tc_FontSize;
+
+-(UILabel *(^)(NSTextAlignment))tc_Align;
+
 
 @end
