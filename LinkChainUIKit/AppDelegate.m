@@ -9,6 +9,54 @@
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
+ 
+ /**
+ 
+ 接下来的计划: 常用控件_以及_常用控件的常用部分已经整理完毕, 下来就需要针对每种不同的空间做出不同_属性改造
+ 
+ 属性总结完毕, 接下来是对手势方式的改进, 应该能达到所有人无障碍使用, 之后的更新主要保持在方法和类的添加上
+ 
+ 新增特性: 增加快捷颜色设置, 通过枚举调用
+ 
+ */
+
+
+/**
+ 
+ 一般---------
+ 
+ Frame 2
+ Bounds
+ Tag
+ Alp
+ hidden
+ tintColor
+ BGColor
+ Opeque
+ Userinterface
+ 手势
+ 
+ Center 2
+ CornerS
+ MaskB
+ mask
+ Transform
+ 多点手势
+ clipTobounce
+ contentMode
+ maskView
+ 
+ ----------特殊
+ 
+ add
+ insert
+ bring
+ UIEdg
+ 
+ */
+ 
+
+
 
 @end
 

@@ -14,9 +14,6 @@
 
 @interface UILabel (ytcChain)<ytcChainProtocolDelegate>
 
-
-
-
 #pragma mark ====================== 其他函数
 
 +(instancetype)tc_InitWithBlock:(void(^)(UILabel *label))callBack;
