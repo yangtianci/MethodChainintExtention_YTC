@@ -7,11 +7,11 @@
 1.
 
 //新创建一个UIImageView并对frame等进行_赋值_添加手势_将自己添加进父视图
+//推荐第一个调用 tc_frame 进行尺寸赋值,最后一个调用 tc_SuperView 将自己添加进父视图
 
 UIImageView *imgV = [UIImageView tc_InitWithBlock:^(UIImageView *imgView) {
       imgView.tc_BGColorEnum(tcColor_Rand0m).tc_Gestrure(GestureType_Tap,self,@selector(Taplalalalla:)).tc_FrameValue(50,50,100,100).tc_Tag(20).tc_SuperView(self.view);
-      
-    }];
+  }];
 
 
 
