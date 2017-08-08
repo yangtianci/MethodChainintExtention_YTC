@@ -14,8 +14,6 @@
 
 @interface UIScrollView (ytcChain)<ytcChainProtocolDelegate>
 
-@property (nonatomic,assign) GestureType type;
-
 #pragma mark ====================== 其他函数
 
 +(instancetype)tc_InitWithBlock:(void(^)(UIScrollView *scrollView))callBack;

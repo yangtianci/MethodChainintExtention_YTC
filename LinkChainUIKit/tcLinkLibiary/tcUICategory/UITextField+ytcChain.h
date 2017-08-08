@@ -14,6 +14,12 @@
 
 @interface UITextField (ytcChain)<ytcChainProtocolDelegate>
 
+#pragma mark ====================== 其他函数
+
++(instancetype)tc_InitWithBlock:(void(^)(UITextField *textField))callBack;
+
+-(UITextField*(^)(UIView *SuperView))tc_SuperView;
+
 #pragma mark ====================== 通用属性
 
 -(UITextField*(^)(float x,float y,float width,float height))tc_FrameValue;

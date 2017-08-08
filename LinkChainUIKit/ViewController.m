@@ -38,10 +38,8 @@
     */
     
 
-    UIImageView *imgA = [UIImageView tc_InitWithBlock:^(UIImageView *imgView) {
-       
-        imgView.tc_FrameValue(0,0,100,100).tc_BGColorEnum(tcColor_Orange).tc_SuperView(self.view);
-        
+    UIImageView *imgV = [UIImageView tc_InitWithBlock:^(UIImageView *imgView) {
+        imgView.tc_BGColorEnum(tcColor_Rand0m).tc_Gestrure(GestureType_Tap,self,@selector(Taplalalalla:)).tc_FrameValue(50,50,100,100).tc_Tag(20).tc_SuperView(self.view);
     }];
     
     

@@ -14,6 +14,13 @@
 
 @interface UIButton (ytcChain)<ytcChainProtocolDelegate>
 
+
+#pragma mark ====================== 其他函数
+
++(UIButton*)tc_InitWithBlock:(void(^)(UIButton *button))callBack;
+
+-(UIButton*(^)(UIView *SuperView))tc_SuperView;
+
 #pragma mark ====================== 通用属性
 
 -(UIButton*(^)(float x,float y,float width,float height))tc_FrameValue;

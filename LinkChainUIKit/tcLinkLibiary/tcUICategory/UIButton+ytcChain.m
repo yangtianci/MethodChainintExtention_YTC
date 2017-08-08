@@ -13,13 +13,12 @@
 #pragma mark ====================== 其他函数
 
 
-+(instancetype)tc_InitWithBlock:(void(^)(UIButton *button))callBack{
++(UIButton*)tc_InitWithBlock:(void(^)(UIButton *button))callBack{
     
     UIButton *button = [[UIButton alloc]init];
     callBack(button);
     return button;
 }
-
 
 -(UIButton*(^)(UIView *SuperView))tc_SuperView{
     return ^UIButton *(UIView *SuperView){

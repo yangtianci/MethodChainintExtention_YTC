@@ -14,13 +14,11 @@
 
 #pragma mark ====================== 其他函数
 
-+(instancetype)tc_InitWithBlock:(void(^)(UIImageView *imgView))callBack{
-    
++(UIImageView*)tc_InitWithBlock:(void(^)(UIImageView *imgView))callBack{
     UIImageView *imgView = [[UIImageView alloc]init];
     callBack(imgView);
     return imgView;
 }
-
 
 -(UIImageView*(^)(UIView *SuperView))tc_SuperView{
     return ^UIImageView *(UIView *SuperView){

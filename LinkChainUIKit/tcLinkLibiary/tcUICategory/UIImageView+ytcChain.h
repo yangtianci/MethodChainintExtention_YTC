@@ -62,7 +62,7 @@
 
 #pragma mark ====================== 其他函数
 
-+(instancetype)tc_InitWithBlock:(void(^)(UIImageView *imgView))callBack;
++(UIImageView*)tc_InitWithBlock:(void(^)(UIImageView *imgView))callBack;
 
 -(UIImageView*(^)(UIView *SuperView))tc_SuperView;
 
