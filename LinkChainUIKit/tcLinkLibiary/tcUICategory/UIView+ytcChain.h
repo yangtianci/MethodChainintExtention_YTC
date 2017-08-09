@@ -17,9 +17,13 @@
 
 #pragma mark ====================== 其他函数
 
-+(instancetype)tc_InitWithBlock:(void(^)(UIView *imgView))callBack;
++(instancetype)tc_InitWithBlock:(void(^)(UIView *view))callBack;
 
 -(UIView*(^)(UIView *SuperView))tc_SuperView;
+
+#pragma mark ====================== 特殊属性
+
+-(UIView*(^)(UIView *subView))tc_SubView;
 
 #pragma mark ====================== 通用属性
 

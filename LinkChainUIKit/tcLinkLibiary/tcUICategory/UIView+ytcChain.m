@@ -15,17 +15,26 @@
 #pragma mark ====================== 其他函数
 
 
-+(instancetype)tc_InitWithBlock:(void(^)(UIView *imgView))callBack{
++(instancetype)tc_InitWithBlock:(void(^)(UIView *view))callBack{
     
-    UIView *imgView = [[UIView alloc]init];
-    callBack(imgView);
-    return imgView;
+    UIView *view = [[UIView alloc]init];
+    callBack(view);
+    return view;
 }
 
 
 -(UIView*(^)(UIView *SuperView))tc_SuperView{
     return ^UIView *(UIView *SuperView){
         [SuperView addSubview:self];
+        return self;
+    };
+}
+
+#pragma mark ====================== 特殊属性
+
+-(UIView *(^)(UIView *))tc_SubView{
+    return ^UIView *(UIView *subView){
+        [self addSubview:subView];
         return self;
     };
 }
