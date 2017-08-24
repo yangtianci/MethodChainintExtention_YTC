@@ -12,14 +12,33 @@
 
 #import "ytcChainHeader.h"
 
-@interface UIButton (ytcChain)<ytcChainProtocolDelegate>
 
+
+
+@interface UIButton (ytcChain)<ytcChainProtocolDelegate>
 
 #pragma mark ====================== 其他函数
 
 +(UIButton*)tc_InitWithBlock:(void(^)(UIButton *button))callBack;
 
 -(UIButton*(^)(UIView *SuperView))tc_SuperView;
+
+#pragma mark ====================== 特殊属性
+/*
+ contentEdgeInsets
+ titleEdgeInsets
+ imageEdgeInsets
+ showsTouchWhenHighlighted
+ font
+ select
+ enable
+ Selector
+title.titleColor.Image.BGImage.AttributeTitle + 状态
+*/
+
+
+
+
 
 #pragma mark ====================== 通用属性
 

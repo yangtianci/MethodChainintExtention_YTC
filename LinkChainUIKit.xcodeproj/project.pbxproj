@@ -13,6 +13,7 @@
 		04597B961F36E26700D078FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04597B941F36E26700D078FC /* Main.storyboard */; };
 		04597B981F36E26700D078FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04597B971F36E26700D078FC /* Assets.xcassets */; };
 		04597B9B1F36E26700D078FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04597B991F36E26700D078FC /* LaunchScreen.storyboard */; };
+		7218650E1F4A70AB00A9D4D6 /* CALayer+ytcChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 7218650D1F4A70AB00A9D4D6 /* CALayer+ytcChain.m */; };
 		7243C8001F3962A6003F4A90 /* SubJoinTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7243C7F11F3962A6003F4A90 /* SubJoinTool.m */; };
 		7243C8011F3962A6003F4A90 /* UIButton+ytcChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 7243C7F31F3962A6003F4A90 /* UIButton+ytcChain.m */; };
 		7243C8021F3962A6003F4A90 /* UIImageView+ytcChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 7243C7F51F3962A6003F4A90 /* UIImageView+ytcChain.m */; };
@@ -20,6 +21,7 @@
 		7243C8041F3962A6003F4A90 /* UIScrollView+ytcChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 7243C7F91F3962A6003F4A90 /* UIScrollView+ytcChain.m */; };
 		7243C8051F3962A6003F4A90 /* UITextField+ytcChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 7243C7FB1F3962A6003F4A90 /* UITextField+ytcChain.m */; };
 		7243C8061F3962A6003F4A90 /* UIView+ytcChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 7243C7FD1F3962A6003F4A90 /* UIView+ytcChain.m */; };
+		726B908D1F3BF307002DBF5F /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726B908C1F3BF307002DBF5F /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		04597B971F36E26700D078FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04597B9A1F36E26700D078FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04597B9C1F36E26700D078FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7218650C1F4A70AB00A9D4D6 /* CALayer+ytcChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+ytcChain.h"; sourceTree = "<group>"; };
+		7218650D1F4A70AB00A9D4D6 /* CALayer+ytcChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+ytcChain.m"; sourceTree = "<group>"; };
 		7243C7F01F3962A6003F4A90 /* SubJoinTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubJoinTool.h; sourceTree = "<group>"; };
 		7243C7F11F3962A6003F4A90 /* SubJoinTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubJoinTool.m; sourceTree = "<group>"; };
 		7243C7F21F3962A6003F4A90 /* UIButton+ytcChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ytcChain.h"; sourceTree = "<group>"; };
@@ -49,6 +53,8 @@
 		7243C7FD1F3962A6003F4A90 /* UIView+ytcChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ytcChain.m"; sourceTree = "<group>"; };
 		7243C7FE1F3962A6003F4A90 /* ytcChainHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ytcChainHeader.h; sourceTree = "<group>"; };
 		7243C7FF1F3962A6003F4A90 /* ytcChainProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ytcChainProtocol.h; sourceTree = "<group>"; };
+		726B908B1F3BF306002DBF5F /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		726B908C1F3BF307002DBF5F /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,8 @@
 				04597B8F1F36E26700D078FC /* AppDelegate.m */,
 				04597B911F36E26700D078FC /* ViewController.h */,
 				04597B921F36E26700D078FC /* ViewController.m */,
+				726B908B1F3BF306002DBF5F /* SecondViewController.h */,
+				726B908C1F3BF307002DBF5F /* SecondViewController.m */,
 				04597B941F36E26700D078FC /* Main.storyboard */,
 				04597B971F36E26700D078FC /* Assets.xcassets */,
 				04597B991F36E26700D078FC /* LaunchScreen.storyboard */,
@@ -116,6 +124,10 @@
 			children = (
 				7243C7F01F3962A6003F4A90 /* SubJoinTool.h */,
 				7243C7F11F3962A6003F4A90 /* SubJoinTool.m */,
+				7218650C1F4A70AB00A9D4D6 /* CALayer+ytcChain.h */,
+				7218650D1F4A70AB00A9D4D6 /* CALayer+ytcChain.m */,
+				7243C7FC1F3962A6003F4A90 /* UIView+ytcChain.h */,
+				7243C7FD1F3962A6003F4A90 /* UIView+ytcChain.m */,
 				7243C7F21F3962A6003F4A90 /* UIButton+ytcChain.h */,
 				7243C7F31F3962A6003F4A90 /* UIButton+ytcChain.m */,
 				7243C7F41F3962A6003F4A90 /* UIImageView+ytcChain.h */,
@@ -126,8 +138,6 @@
 				7243C7F91F3962A6003F4A90 /* UIScrollView+ytcChain.m */,
 				7243C7FA1F3962A6003F4A90 /* UITextField+ytcChain.h */,
 				7243C7FB1F3962A6003F4A90 /* UITextField+ytcChain.m */,
-				7243C7FC1F3962A6003F4A90 /* UIView+ytcChain.h */,
-				7243C7FD1F3962A6003F4A90 /* UIView+ytcChain.m */,
 				7243C7FE1F3962A6003F4A90 /* ytcChainHeader.h */,
 				7243C7FF1F3962A6003F4A90 /* ytcChainProtocol.h */,
 			);
@@ -204,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7218650E1F4A70AB00A9D4D6 /* CALayer+ytcChain.m in Sources */,
 				7243C8051F3962A6003F4A90 /* UITextField+ytcChain.m in Sources */,
 				7243C8041F3962A6003F4A90 /* UIScrollView+ytcChain.m in Sources */,
 				7243C8001F3962A6003F4A90 /* SubJoinTool.m in Sources */,
@@ -212,6 +223,7 @@
 				04597B901F36E26700D078FC /* AppDelegate.m in Sources */,
 				04597B8D1F36E26700D078FC /* main.m in Sources */,
 				7243C8021F3962A6003F4A90 /* UIImageView+ytcChain.m in Sources */,
+				726B908D1F3BF307002DBF5F /* SecondViewController.m in Sources */,
 				7243C8031F3962A6003F4A90 /* UILabel+ytcChain.m in Sources */,
 				7243C8061F3962A6003F4A90 /* UIView+ytcChain.m in Sources */,
 			);

@@ -14,7 +14,6 @@
 
 
 +(UIButton*)tc_InitWithBlock:(void(^)(UIButton *button))callBack{
-    
     UIButton *button = [[UIButton alloc]init];
     callBack(button);
     return button;
@@ -26,6 +25,42 @@
         return self;
     };
 }
+
+#pragma mark ====================== 特殊属性
+/*
+ titleEdgeInsets
+ contentEdgeInsets
+ imageEdgeInsets
+ showsTouchWhenHighlighted
+ font
+ select
+ enable
+ Selector
+ title.titleColor.Image.BGImage.AttributeTitle + 状态
+ */
+
+-(UIButton*(^)(float top,float left,float bottom,float right))tc_titleEdgValue{
+    return ^UIButton *(float top,float left,float bottom,float right){
+        if (top <= 0 || left <=0 || bottom <= 0 || right <= 0) {
+            NSLog(@"ytc_Link:属性值为空或负数, 需检查");
+        }
+        self.titleEdgeInsets = UIEdgeInsetsMake(top, left, bottom, right);
+        return self;
+    };
+    
+}
+
+-(UIButton*(^)(UIEdgeInsets edg))tc_titleEdgRect{
+    return ^UIButton *(UIEdgeInsets edg){
+        self.titleEdgeInsets = edg;
+        return self;
+    };
+}
+
+
+
+
+
 
 #pragma mark ====================== 通用属性
 
