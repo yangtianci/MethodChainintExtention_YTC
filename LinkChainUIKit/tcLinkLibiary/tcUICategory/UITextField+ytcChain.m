@@ -27,6 +27,216 @@
     };
 }
 
+-(void(^)())tc_RemoveFromSuperview{
+    return ^void(){
+        [self removeFromSuperview];
+    };
+}
+
+#pragma mark ====================== 特殊属性
+
+//NSString *text
+-(UITextField*(^)(NSString *text))tc_text{
+    return ^UITextField *(NSString *text){
+        self.text = text;
+        return self;
+    };
+}
+
+//NSAttributedString *attributedText
+-(UITextField*(^)(NSAttributedString *attributedText))tc_attributedText{
+    return ^UITextField *(NSAttributedString *attributedText){
+        self.attributedText = attributedText;
+        return self;
+    };
+}
+
+//UIColor *textColor
+-(UITextField*(^)(UIColor *textColor))tc_textColor{
+    return ^UITextField *(UIColor *textColor){
+        self.textColor = textColor;
+        return self;
+    };
+}
+
+//UIFont *font
+-(UITextField*(^)(UIFont *font))tc_font{
+    return ^UITextField *(UIFont *font){
+        self.font = font;
+        return self;
+    };
+}
+
+//NSTextAlignment textAlignment
+-(UITextField*(^)(NSTextAlignment textAlignment))tc_textAlignment{
+    return ^UITextField *(NSTextAlignment textAlignment){
+        self.textAlignment = textAlignment;
+        return self;
+    };
+}
+
+//UITextBorderStyle borderStyle
+-(UITextField*(^)(UITextBorderStyle borderStyle))tc_borderStyle{
+    return ^UITextField *(UITextBorderStyle borderStyle){
+        self.borderStyle = borderStyle;
+        return self;
+    };
+}
+
+//NSDictionary<NSString *, id> *defaultTextAttributes
+-(UITextField*(^)(NSDictionary<NSString *, id> *defaultTextAttributes))tc_defaultTextAttributes{
+    return ^UITextField *(NSDictionary<NSString *, id> *defaultTextAttributes){
+        self.defaultTextAttributes = defaultTextAttributes;
+        return self;
+    };
+}
+
+//NSString *placeholder
+-(UITextField*(^)(NSString *placeholder))tc_placeholder{
+    return ^UITextField *(NSString *placeholder){
+        self.placeholder = placeholder;
+        return self;
+    };
+}
+
+//NSAttributedString *attributedPlaceholder
+-(UITextField*(^)(NSAttributedString *attributedPlaceholder))tc_attributedPlaceholder{
+    return ^UITextField *(NSAttributedString *attributedPlaceholder){
+        self.attributedPlaceholder = attributedPlaceholder;
+        return self;
+    };
+}
+
+//BOOL clearsOnBeginEditing
+-(UITextField*(^)(BOOL clearsOnBeginEditing))tc_clearsOnBeginEditing{
+    return ^UITextField *(BOOL clearsOnBeginEditing){
+        self.clearsOnBeginEditing = clearsOnBeginEditing;
+        return self;
+    };
+}
+
+//BOOL adjustsFontSizeToFitWidth
+-(UITextField*(^)(BOOL adjustsFontSizeToFitWidth))tc_adjustsFontSizeToFitWidth{
+    return ^UITextField *(BOOL adjustsFontSizeToFitWidth){
+        self.adjustsFontSizeToFitWidth = adjustsFontSizeToFitWidth;
+        return self;
+    };
+}
+
+//CGFloat minimumFontSize
+-(UITextField*(^)(CGFloat minimumFontSize))tc_minimumFontSize{
+    return ^UITextField *(CGFloat minimumFontSize){
+        self.minimumFontSize = minimumFontSize;
+        return self;
+    };
+}
+
+//id<UITextFieldDelegate> delegate
+-(UITextField*(^)(id<UITextFieldDelegate> delegate))tc_delegate{
+    return ^UITextField *(id<UITextFieldDelegate> delegate){
+        self.delegate = delegate;
+        return self;
+    };
+}
+
+//UIImage *background
+-(UITextField*(^)(UIImage *background))tc_background{
+    return ^UITextField *(UIImage *background){
+        self.background = background;
+        return self;
+    };
+}
+
+//UIImage *disabledBackground
+-(UITextField*(^)(UIImage *disabledBackground))tc_disabledBackground{
+    return ^UITextField *(UIImage *disabledBackground){
+        self.disabledBackground = disabledBackground;
+        return self;
+    };
+}
+
+//NSDictionary<NSString *, id> *typingAttributes
+-(UITextField*(^)(NSDictionary<NSString *, id> *typingAttributes))tc_typingAttributes{
+    return ^UITextField *(NSDictionary<NSString *, id> *typingAttributes){
+        self.typingAttributes = typingAttributes;
+        return self;
+    };
+}
+
+//UITextFieldViewMode  clearButtonMode
+-(UITextField*(^)(UITextFieldViewMode  clearButtonMode))tc_clearButtonModed{
+    return ^UITextField *(UITextFieldViewMode  clearButtonMode){
+        self.clearButtonMode = clearButtonMode;
+        return self;
+    };
+}
+
+//UIView *leftView
+-(UITextField*(^)(UIView *leftView))tc_leftView{
+    return ^UITextField *(UIView *leftView){
+        self.leftView = leftView;
+        return self;
+    };
+}
+
+//UITextFieldViewMode leftViewMode
+-(UITextField*(^)(UITextFieldViewMode leftViewMode))tc_leftViewMode{
+    return ^UITextField *(UITextFieldViewMode leftViewMode){
+        self.leftViewMode = leftViewMode;
+        return self;
+    };
+}
+
+//UIView *rightView
+-(UITextField*(^)(UIView *rightView))tc_rightView{
+    return ^UITextField *(UIView *rightView){
+        self.rightView = rightView;
+        return self;
+    };
+}
+
+//UITextFieldViewMode rightViewMode
+-(UITextField*(^)(UITextFieldViewMode rightViewMode))tc_rightViewMode{
+    return ^UITextField *(UITextFieldViewMode rightViewMode){
+        self.rightViewMode = rightViewMode;
+        return self;
+    };
+}
+
+//UIView *inputView
+-(UITextField*(^)(UIView *inputView))tc_inputView{
+    return ^UITextField *(UIView *inputView){
+        self.inputView = inputView;
+        return self;
+    };
+}
+
+//UIView *inputAccessoryView
+-(UITextField*(^)(UIView *inputAccessoryView))tc_inputAccessoryView{
+    return ^UITextField *(UIView *inputAccessoryView){
+        self.inputAccessoryView = inputAccessoryView;
+        return self;
+    };
+}
+
+//BOOL clearsOnInsertion
+-(UITextField*(^)(BOOL clearsOnInsertion))tc_clearsOnInsertion{
+    return ^UITextField *(BOOL clearsOnInsertion){
+        self.clearsOnInsertion = clearsOnInsertion;
+        return self;
+    };
+}
+
+
+
+
+
+
+
+
+
+
+
 #pragma mark ====================== 通用属性
 
 -(UITextField*(^)(float x,float y,float width,float height))tc_FrameValue{

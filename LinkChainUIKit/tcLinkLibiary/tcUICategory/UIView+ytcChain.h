@@ -21,6 +21,8 @@
 
 -(UIView*(^)(UIView *SuperView))tc_SuperView;
 
+-(void(^)())tc_RemoveFromSuperview;
+
 #pragma mark ====================== 特殊属性
 
 -(UIView*(^)(UIView *subView))tc_SubView;
@@ -33,9 +35,7 @@
 
 -(UIView*(^)(CGRect bounds))tc_Bounds;
 
-
 -(UIView*(^)(NSInteger tag))tc_Tag;
-
 
 -(UIView*(^)(CGFloat x, CGFloat y))tc_CenterValue;
 

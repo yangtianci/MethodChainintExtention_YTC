@@ -20,6 +20,82 @@
 
 -(UITextField*(^)(UIView *SuperView))tc_SuperView;
 
+-(void(^)())tc_RemoveFromSuperview;
+
+#pragma mark ====================== 特殊属性
+
+//NSString *text
+-(UITextField*(^)(NSString *text))tc_text;
+
+//NSAttributedString *attributedText
+-(UITextField*(^)(NSAttributedString *attributedText))tc_attributedText;
+
+//UIColor *textColor
+-(UITextField*(^)(UIColor *textColor))tc_textColor;
+
+//UIFont *font
+-(UITextField*(^)(UIFont *font))tc_font;
+
+//NSTextAlignment textAlignment
+-(UITextField*(^)(NSTextAlignment textAlignment))tc_textAlignment;
+
+//UITextBorderStyle borderStyle
+-(UITextField*(^)(UITextBorderStyle borderStyle))tc_borderStyle;
+
+//NSDictionary<NSString *, id> *defaultTextAttributes
+-(UITextField*(^)(NSDictionary<NSString *, id> *defaultTextAttributes))tc_defaultTextAttributes;
+
+//NSString *placeholder
+-(UITextField*(^)(NSString *placeholder))tc_placeholder;
+
+//NSAttributedString *attributedPlaceholder
+-(UITextField*(^)(NSAttributedString *attributedPlaceholder))tc_attributedPlaceholder;
+
+//BOOL clearsOnBeginEditing
+-(UITextField*(^)(BOOL clearsOnBeginEditing))tc_clearsOnBeginEditing;
+
+//BOOL adjustsFontSizeToFitWidth
+-(UITextField*(^)(BOOL adjustsFontSizeToFitWidth))tc_adjustsFontSizeToFitWidth;
+
+//CGFloat minimumFontSize
+-(UITextField*(^)(CGFloat minimumFontSize))tc_minimumFontSize;
+
+//id<UITextFieldDelegate> delegate
+-(UITextField*(^)(id<UITextFieldDelegate> delegate))tc_delegate;
+
+//UIImage *background
+-(UITextField*(^)(UIImage *background))tc_background;
+
+//UIImage *disabledBackground
+-(UITextField*(^)(UIImage *disabledBackground))tc_disabledBackground;
+
+//NSDictionary<NSString *, id> *typingAttributes
+-(UITextField*(^)(NSDictionary<NSString *, id> *typingAttributes))tc_typingAttributes;
+
+//UITextFieldViewMode  clearButtonMode
+-(UITextField*(^)(UITextFieldViewMode  clearButtonMode))tc_clearButtonModed;
+
+//UIView *leftView
+-(UITextField*(^)(UIView *leftView))tc_leftView;
+
+//UITextFieldViewMode leftViewMode
+-(UITextField*(^)(UITextFieldViewMode leftViewMode))tc_leftViewMode;
+
+//UIView *rightView
+-(UITextField*(^)(UIView *rightView))tc_rightView;
+
+//UITextFieldViewMode rightViewMode
+-(UITextField*(^)(UITextFieldViewMode rightViewMode))tc_rightViewMode;
+
+//UIView *inputView
+-(UITextField*(^)(UIView *inputView))tc_inputView;
+
+//UIView *inputAccessoryView
+-(UITextField*(^)(UIView *inputAccessoryView))tc_inputAccessoryView;
+
+//BOOL clearsOnInsertion
+-(UITextField*(^)(BOOL clearsOnInsertion))tc_clearsOnInsertion;
+
 #pragma mark ====================== 通用属性
 
 -(UITextField*(^)(float x,float y,float width,float height))tc_FrameValue;

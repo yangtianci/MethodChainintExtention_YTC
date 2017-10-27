@@ -20,6 +20,76 @@
 
 -(UIScrollView*(^)(UIView *SuperView))tc_SuperView;
 
+-(void(^)())tc_RemoveFromSuperview;
+
+#pragma mark ====================== 特殊属性
+
+//CGPoint contentOffset
+-(UIScrollView *(^)(CGPoint contentOffset))tc_ContentOffset;
+
+//CGSize contentSize
+-(UIScrollView *(^)(CGSize contentSize))tc_ContentSize;
+
+//UIEdgeInsets contentInset
+-(UIScrollView *(^)(UIEdgeInsets contentInset))tc_ContentInset;
+
+//id<UIScrollViewDelegate> delegate
+-(UIScrollView *(^)(id<UIScrollViewDelegate> delegate))tc_Delegate;
+
+//BOOL directionalLockEnabled
+-(UIScrollView *(^)(BOOL directionalLockEnabled))tc_DirectionalLockEnabled;
+
+//BOOL bounces
+-(UIScrollView *(^)(BOOL bounces))tc_Bounces;
+
+//BOOL alwaysBounceVertical
+-(UIScrollView *(^)(BOOL alwaysBounceVertical))tc_AlwaysBounceVertical;
+
+//BOOL alwaysBounceHorizontal
+-(UIScrollView *(^)(BOOL alwaysBounceHorizontal))tc_AlwaysBounceHorizontal;
+
+//BOOL pagingEnabled
+-(UIScrollView *(^)(BOOL pagingEnabled))tc_PagingEnabled;
+
+//BOOL scrollEnabled
+-(UIScrollView *(^)(BOOL scrollEnabled))tc_ScrollEnabled;
+
+//BOOL                         showsHorizontalScrollIndicator
+-(UIScrollView *(^)(BOOL                         showsHorizontalScrollIndicator))tc_ShowsHorizontalScrollIndicator;
+
+//BOOL showsVerticalScrollIndicator
+-(UIScrollView *(^)(BOOL showsVerticalScrollIndicator))tc_ShowsVerticalScrollIndicator;
+
+//UIEdgeInsets scrollIndicatorInsets
+-(UIScrollView *(^)(UIEdgeInsets scrollIndicatorInsets))tc_ScrollIndicatorInsets;
+
+//UIScrollViewIndicatorStyle indicatorStyle
+-(UIScrollView *(^)(UIScrollViewIndicatorStyle indicatorStyle))tc_IndicatorStyle;
+
+//CGFloat decelerationRate
+-(UIScrollView *(^)(CGFloat decelerationRate))tc_DecelerationRate;
+
+//UIScrollViewIndexDisplayMode indexDisplayMode
+-(UIScrollView *(^)(UIScrollViewIndexDisplayMode indexDisplayMode))tc_IndexDisplayMode;
+
+//- (void)setContentOffset:(CGPoint)contentOffset animated:(BOOL)animated;
+-(UIScrollView *(^)(CGPoint contentOffset, BOOL *animated))tc_SetContentOffset;
+
+//- (void)scrollRectToVisible:(CGRect)rect animated:(BOOL)animated;
+-(UIScrollView *(^)(CGRect rect, BOOL animated))tc_ScrollRectToVisible;
+
+//CGFloat minimumZoomScale
+-(UIScrollView *(^)(CGFloat minimumZoomScale))tc_MinimumZoomScale;
+
+//CGFloat maximumZoomScale
+-(UIScrollView *(^)(CGFloat maximumZoomScale))tc_MaximumZoomScale;
+
+//BOOL  scrollsToTop
+-(UIScrollView *(^)(BOOL scrollsToTop))tc_ScrollsToTop;
+
+//UIScrollViewKeyboardDismissMode keyboardDismissMode
+-(UIScrollView *(^)(UIScrollViewKeyboardDismissMode keyboardDismissMode))tc_KeyboardDismissMode;
+
 #pragma mark ====================== 通用属性
 
 -(UIScrollView*(^)(float x,float y,float width,float height))tc_FrameValue;

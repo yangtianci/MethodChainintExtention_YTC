@@ -26,11 +26,14 @@
     };
 }
 
+-(void(^)())tc_RemoveFromSuperview{
+    return ^void(){
+        [self removeFromSuperview];
+    };
+}
+
 #pragma mark ====================== 特殊属性
 /*
- titleEdgeInsets
- contentEdgeInsets
- imageEdgeInsets
  showsTouchWhenHighlighted
  font
  select
@@ -38,6 +41,20 @@
  Selector
  title.titleColor.Image.BGImage.AttributeTitle + 状态
  */
+
+-(UIButton *(^)(BOOL enable))tc_enable{
+    return ^UIButton *(BOOL enable){
+        self.enabled = enable;
+        return self;
+    };
+}
+
+-(UIButton *(^)(id Delegate, SEL selecter, UIControlEvents event))tc_AddTarget{
+    return ^UIButton *(id Delegate, SEL selecter, UIControlEvents event){
+        [self addTarget:Delegate action:selecter forControlEvents:event];
+        return self;
+    };
+}
 
 -(UIButton*(^)(float top,float left,float bottom,float right))tc_titleEdgValue{
     return ^UIButton *(float top,float left,float bottom,float right){
@@ -58,9 +75,70 @@
 }
 
 
+-(UIButton*(^)(float top,float left,float bottom,float right))tc_imgEdgValue{
+    return ^UIButton *(float top,float left,float bottom,float right){
+        if (top <= 0 || left <=0 || bottom <= 0 || right <= 0) {
+            NSLog(@"ytc_Link:属性值为空或负数, 需检查");
+        }
+        self.imageEdgeInsets = UIEdgeInsetsMake(top, left, bottom, right);
+        return self;
+    };
+    
+}
+
+-(UIButton*(^)(UIEdgeInsets edg))tc_imgEdgRect{
+    return ^UIButton *(UIEdgeInsets edg){
+        self.imageEdgeInsets = edg;
+        return self;
+    };
+}
 
 
+-(UIButton*(^)(NSString *title, UIControlState state))tc_setTitle{
+    return ^UIButton *(NSString *title, UIControlState state){
 
+        [self setTitle:title forState:state];
+        
+        return self;
+    };
+}
+
+-(UIButton*(^)(UIColor *titleColor, UIControlState state))tc_setTitleColor{
+    return ^UIButton *(UIColor *titleColor, UIControlState state){
+        [self setTitleColor:titleColor forState:state];
+        return self;
+    };
+}
+
+
+-(UIButton*(^)(UIColor *shadowColor, UIControlState state))tc_setShadowColor{
+    return ^UIButton *(UIColor *shadowColor, UIControlState state){
+        [self setTitleShadowColor:shadowColor forState:state];
+        return self;
+    };
+}
+
+-(UIButton*(^)(UIImage *image, UIControlState state))tc_setImage{
+    return ^UIButton *(UIImage *image, UIControlState state){
+        [self setImage:image forState:state];
+        return self;
+    };
+}
+
+-(UIButton*(^)(UIImage *backgroundImage, UIControlState state))tc_setBackgroundImage{
+    return ^UIButton *(UIImage *backgroundImage, UIControlState state){
+        [self setBackgroundImage:backgroundImage forState:state];
+        return self;
+    };
+}
+
+
+-(UIButton*(^)(NSAttributedString *attributedTitle, UIControlState state))tc_setAttributedTitle{
+    return ^UIButton *(NSAttributedString *attributedTitle, UIControlState state){
+        [self setAttributedTitle:attributedTitle forState:state];
+        return self;
+    };
+}
 
 #pragma mark ====================== 通用属性
 

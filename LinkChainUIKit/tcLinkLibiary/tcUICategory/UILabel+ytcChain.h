@@ -20,6 +20,9 @@
 
 -(UILabel*(^)(UIView *SuperView))tc_SuperView;
 
+-(void(^)())tc_RemoveFromSuperview;
+
+-(void(^)())tc_SizeToFit;
 
 #pragma mark ====================== 特殊属性
 
@@ -30,6 +33,33 @@
 -(UILabel *(^)(NSInteger))tc_FontSize;
 
 -(UILabel *(^)(NSTextAlignment))tc_Align;
+
+//NSLineBreakMode lineBreakMode
+-(UILabel *(^)(NSLineBreakMode lineBreakMode))tc_LineBreakMode;
+
+//NSAttributedString *attributedText
+-(UILabel *(^)(NSAttributedString *attributedText))tc_AttributedText;
+
+//UIColor *highlightedTextColor
+-(UILabel *(^)(UIColor *highlightedTextColor))tc_HighlightedTextColor;
+
+//BOOL highlighted
+-(UILabel *(^)(BOOL highlighted))tc_Highlighted;
+
+//NSInteger numberOfLines
+-(UILabel *(^)(NSInteger numberOfLines))tc_NumberOfLines;
+
+//BOOL adjustsFontSizeToFitWidth
+-(UILabel *(^)(BOOL adjustsFontSizeToFitWidth))tc_AdjustsFontSizeToFitWidth;
+
+//UIBaselineAdjustment baselineAdjustment
+-(UILabel *(^)(UIBaselineAdjustment baselineAdjustment))tc_BaselineAdjustment;
+
+//CGFloat minimumScaleFactor
+-(UILabel *(^)(CGFloat minimumScaleFactor))tc_MinimumScaleFactor;
+
+//CGFloat preferredMaxLayoutWidth
+-(UILabel *(^)(CGFloat preferredMaxLayoutWidth))tc_PreferredMaxLayoutWidth;
 
 #pragma mark ====================== 通用属性
 

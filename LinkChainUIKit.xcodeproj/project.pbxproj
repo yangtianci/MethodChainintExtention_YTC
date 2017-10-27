@@ -13,6 +13,9 @@
 		04597B961F36E26700D078FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04597B941F36E26700D078FC /* Main.storyboard */; };
 		04597B981F36E26700D078FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04597B971F36E26700D078FC /* Assets.xcassets */; };
 		04597B9B1F36E26700D078FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04597B991F36E26700D078FC /* LaunchScreen.storyboard */; };
+		7214820E1FA31B8100D985CC /* UISegmentedControl+ytcChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 7214820D1FA31B8100D985CC /* UISegmentedControl+ytcChain.m */; };
+		721482111FA31E4D00D985CC /* UISlider+ytcChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 721482101FA31E4D00D985CC /* UISlider+ytcChain.m */; };
+		721482141FA3207A00D985CC /* UISwitch+ytcChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 721482131FA3207A00D985CC /* UISwitch+ytcChain.m */; };
 		7218650E1F4A70AB00A9D4D6 /* CALayer+ytcChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 7218650D1F4A70AB00A9D4D6 /* CALayer+ytcChain.m */; };
 		7243C8001F3962A6003F4A90 /* SubJoinTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7243C7F11F3962A6003F4A90 /* SubJoinTool.m */; };
 		7243C8011F3962A6003F4A90 /* UIButton+ytcChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 7243C7F31F3962A6003F4A90 /* UIButton+ytcChain.m */; };
@@ -22,6 +25,7 @@
 		7243C8051F3962A6003F4A90 /* UITextField+ytcChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 7243C7FB1F3962A6003F4A90 /* UITextField+ytcChain.m */; };
 		7243C8061F3962A6003F4A90 /* UIView+ytcChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 7243C7FD1F3962A6003F4A90 /* UIView+ytcChain.m */; };
 		726B908D1F3BF307002DBF5F /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726B908C1F3BF307002DBF5F /* SecondViewController.m */; };
+		72F4AE131FA093FC00419454 /* ExplainFile_ChainLink in Resources */ = {isa = PBXBuildFile; fileRef = 72F4AE121FA093FC00419454 /* ExplainFile_ChainLink */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +39,12 @@
 		04597B971F36E26700D078FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04597B9A1F36E26700D078FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04597B9C1F36E26700D078FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7214820C1FA31B8100D985CC /* UISegmentedControl+ytcChain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UISegmentedControl+ytcChain.h"; sourceTree = "<group>"; };
+		7214820D1FA31B8100D985CC /* UISegmentedControl+ytcChain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UISegmentedControl+ytcChain.m"; sourceTree = "<group>"; };
+		7214820F1FA31E4D00D985CC /* UISlider+ytcChain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UISlider+ytcChain.h"; sourceTree = "<group>"; };
+		721482101FA31E4D00D985CC /* UISlider+ytcChain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UISlider+ytcChain.m"; sourceTree = "<group>"; };
+		721482121FA3207A00D985CC /* UISwitch+ytcChain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UISwitch+ytcChain.h"; sourceTree = "<group>"; };
+		721482131FA3207A00D985CC /* UISwitch+ytcChain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UISwitch+ytcChain.m"; sourceTree = "<group>"; };
 		7218650C1F4A70AB00A9D4D6 /* CALayer+ytcChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+ytcChain.h"; sourceTree = "<group>"; };
 		7218650D1F4A70AB00A9D4D6 /* CALayer+ytcChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+ytcChain.m"; sourceTree = "<group>"; };
 		7243C7F01F3962A6003F4A90 /* SubJoinTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubJoinTool.h; sourceTree = "<group>"; };
@@ -55,6 +65,7 @@
 		7243C7FF1F3962A6003F4A90 /* ytcChainProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ytcChainProtocol.h; sourceTree = "<group>"; };
 		726B908B1F3BF306002DBF5F /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		726B908C1F3BF307002DBF5F /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		72F4AE121FA093FC00419454 /* ExplainFile_ChainLink */ = {isa = PBXFileReference; lastKnownFileType = text; path = ExplainFile_ChainLink; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +133,7 @@
 		7243C7EF1F3962A6003F4A90 /* tcUICategory */ = {
 			isa = PBXGroup;
 			children = (
+				72F4AE121FA093FC00419454 /* ExplainFile_ChainLink */,
 				7243C7F01F3962A6003F4A90 /* SubJoinTool.h */,
 				7243C7F11F3962A6003F4A90 /* SubJoinTool.m */,
 				7218650C1F4A70AB00A9D4D6 /* CALayer+ytcChain.h */,
@@ -138,6 +150,12 @@
 				7243C7F91F3962A6003F4A90 /* UIScrollView+ytcChain.m */,
 				7243C7FA1F3962A6003F4A90 /* UITextField+ytcChain.h */,
 				7243C7FB1F3962A6003F4A90 /* UITextField+ytcChain.m */,
+				7214820C1FA31B8100D985CC /* UISegmentedControl+ytcChain.h */,
+				7214820D1FA31B8100D985CC /* UISegmentedControl+ytcChain.m */,
+				7214820F1FA31E4D00D985CC /* UISlider+ytcChain.h */,
+				721482101FA31E4D00D985CC /* UISlider+ytcChain.m */,
+				721482121FA3207A00D985CC /* UISwitch+ytcChain.h */,
+				721482131FA3207A00D985CC /* UISwitch+ytcChain.m */,
 				7243C7FE1F3962A6003F4A90 /* ytcChainHeader.h */,
 				7243C7FF1F3962A6003F4A90 /* ytcChainProtocol.h */,
 			);
@@ -203,6 +221,7 @@
 			files = (
 				04597B9B1F36E26700D078FC /* LaunchScreen.storyboard in Resources */,
 				04597B981F36E26700D078FC /* Assets.xcassets in Resources */,
+				72F4AE131FA093FC00419454 /* ExplainFile_ChainLink in Resources */,
 				04597B961F36E26700D078FC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,11 +234,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7218650E1F4A70AB00A9D4D6 /* CALayer+ytcChain.m in Sources */,
+				721482111FA31E4D00D985CC /* UISlider+ytcChain.m in Sources */,
+				721482141FA3207A00D985CC /* UISwitch+ytcChain.m in Sources */,
 				7243C8051F3962A6003F4A90 /* UITextField+ytcChain.m in Sources */,
 				7243C8041F3962A6003F4A90 /* UIScrollView+ytcChain.m in Sources */,
 				7243C8001F3962A6003F4A90 /* SubJoinTool.m in Sources */,
 				04597B931F36E26700D078FC /* ViewController.m in Sources */,
 				7243C8011F3962A6003F4A90 /* UIButton+ytcChain.m in Sources */,
+				7214820E1FA31B8100D985CC /* UISegmentedControl+ytcChain.m in Sources */,
 				04597B901F36E26700D078FC /* AppDelegate.m in Sources */,
 				04597B8D1F36E26700D078FC /* main.m in Sources */,
 				7243C8021F3962A6003F4A90 /* UIImageView+ytcChain.m in Sources */,

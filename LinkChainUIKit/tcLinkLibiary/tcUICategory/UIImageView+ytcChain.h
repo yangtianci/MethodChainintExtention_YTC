@@ -20,9 +20,36 @@
 
 -(UIImageView*(^)(UIView *SuperView))tc_SuperView;
 
+-(void(^)())tc_RemoveFromSuperview;
+
 #pragma mark ====================== 特殊属性
 
--(UIImageView *(^)(UIImage *))tc_Image;
+-(UIImageView *(^)(UIImage *))tc_ImageObject;
+
+-(UIImageView *(^)(NSString *imgName))tc_ImageName;
+
+-(UIImageView *(^)(UIImage *))tc_HighlightedImageObject;
+
+-(UIImageView *(^)(NSString *imgName))tc_HighlightedImageName;
+
+//highlighted
+-(UIImageView *(^)(BOOL highlighted))tc_Highlighted;
+
+//NSArray<UIImage *> *animationImages
+-(UIImageView *(^)(NSArray<UIImage *> *animationImages))tc_AnimationImages;
+
+//NSArray<UIImage *> *highlightedAnimationImages
+-(UIImageView *(^)(NSArray<UIImage *> *highlightedAnimationImages))tc_HighlightedAnimationImages;
+
+//NSTimeInterval animationDuration
+-(UIImageView *(^)(NSTimeInterval animationDuration))tc_AnimationDuration;
+
+//NSInteger animationRepeatCount
+-(UIImageView *(^)(NSInteger animationRepeatCount))tc_AnimationRepeatCount;
+
+-(UIImageView *(^)())tc_StartAnimating;
+
+-(UIImageView *(^)())tc_StopAnimating;
 
 #pragma mark ====================== 通用属性
 

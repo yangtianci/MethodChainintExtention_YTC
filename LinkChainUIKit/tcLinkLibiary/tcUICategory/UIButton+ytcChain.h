@@ -23,6 +23,8 @@
 
 -(UIButton*(^)(UIView *SuperView))tc_SuperView;
 
+-(void(^)())tc_RemoveFromSuperview;
+
 #pragma mark ====================== 特殊属性
 /*
  contentEdgeInsets
@@ -35,10 +37,31 @@
  Selector
 title.titleColor.Image.BGImage.AttributeTitle + 状态
 */
+-(UIButton *(^)(BOOL enable))tc_enable;
+
+-(UIButton *(^)(id Delegate, SEL selecter, UIControlEvents event))tc_AddTarget;
+
+-(UIButton*(^)(float top,float left,float bottom,float right))tc_titleEdgValue;
+
+-(UIButton*(^)(UIEdgeInsets edg))tc_titleEdgRect;
+
+-(UIButton*(^)(float top,float left,float bottom,float right))tc_imgEdgValue;
+
+-(UIButton*(^)(UIEdgeInsets edg))tc_imgEdgRect;
+
+-(UIButton*(^)(NSString *title, UIControlState state))tc_setTitle;
+
+-(UIButton*(^)(UIColor *titleColor, UIControlState state))tc_setTitleColor;
 
 
+-(UIButton*(^)(UIColor *shadowColor, UIControlState state))tc_setShadowColor;
+
+-(UIButton*(^)(UIImage *image, UIControlState state))tc_setImage;
+
+-(UIButton*(^)(UIImage *backgroundImage, UIControlState state))tc_setBackgroundImage;
 
 
+-(UIButton*(^)(NSAttributedString *attributedTitle, UIControlState state))tc_setAttributedTitle;
 
 #pragma mark ====================== 通用属性
 

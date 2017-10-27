@@ -28,6 +28,19 @@
     };
 }
 
+-(void(^)())tc_RemoveFromSuperview{
+    return ^void(){
+        [self removeFromSuperview];
+    };
+}
+
+-(void(^)())tc_SizeToFit{
+    return ^void(){
+        [self sizeToFit];
+    };
+}
+
+
 #pragma mark ====================== 特殊属性
 
 -(UILabel *(^)(NSString *))tc_Text{
@@ -59,6 +72,78 @@
     };
 }
 
+//NSLineBreakMode lineBreakMode
+-(UILabel *(^)(NSLineBreakMode lineBreakMode))tc_LineBreakMode{
+    return ^UILabel*(NSLineBreakMode lineBreakMode){
+        self.lineBreakMode = lineBreakMode;
+        return self;
+    };
+}
+
+//NSAttributedString *attributedText
+-(UILabel *(^)(NSAttributedString *attributedText))tc_AttributedText{
+    return ^UILabel*(NSAttributedString *attributedText){
+        self.attributedText = attributedText;
+        return self;
+    };
+}
+
+//UIColor *highlightedTextColor
+-(UILabel *(^)(UIColor *highlightedTextColor))tc_HighlightedTextColor{
+    return ^UILabel*(UIColor *highlightedTextColor){
+        self.highlightedTextColor = highlightedTextColor;
+        return self;
+    };
+}
+
+//BOOL highlighted
+-(UILabel *(^)(BOOL highlighted))tc_Highlighted{
+    return ^UILabel*(BOOL highlighted){
+        self.highlighted = highlighted;
+        return self;
+    };
+}
+
+//NSInteger numberOfLines
+-(UILabel *(^)(NSInteger numberOfLines))tc_NumberOfLines{
+    return ^UILabel*(NSInteger numberOfLines){
+        self.numberOfLines = numberOfLines;
+        return self;
+    };
+}
+
+
+//BOOL adjustsFontSizeToFitWidth
+-(UILabel *(^)(BOOL adjustsFontSizeToFitWidth))tc_AdjustsFontSizeToFitWidth{
+    return ^UILabel*(BOOL adjustsFontSizeToFitWidth){
+        self.adjustsFontSizeToFitWidth = adjustsFontSizeToFitWidth;
+        return self;
+    };
+}
+
+//UIBaselineAdjustment baselineAdjustment
+-(UILabel *(^)(UIBaselineAdjustment baselineAdjustment))tc_BaselineAdjustment{
+    return ^UILabel*(UIBaselineAdjustment baselineAdjustment){
+        self.baselineAdjustment = baselineAdjustment;
+        return self;
+    };
+}
+
+//CGFloat minimumScaleFactor
+-(UILabel *(^)(CGFloat minimumScaleFactor))tc_MinimumScaleFactor{
+    return ^UILabel*(CGFloat minimumScaleFactor){
+        self.minimumScaleFactor = minimumScaleFactor;
+        return self;
+    };
+}
+
+//CGFloat preferredMaxLayoutWidth
+-(UILabel *(^)(CGFloat preferredMaxLayoutWidth))tc_PreferredMaxLayoutWidth{
+    return ^UILabel*(CGFloat preferredMaxLayoutWidth){
+        self.preferredMaxLayoutWidth = preferredMaxLayoutWidth;
+        return self;
+    };
+}
 
 #pragma mark ====================== 通用属性
 

@@ -30,10 +30,17 @@
     };
 }
 
+-(void(^)())tc_RemoveFromSuperview{
+    return ^void(){
+        [self removeFromSuperview];
+    };
+}
+
 #pragma mark ====================== 特殊属性
 
 -(UIView *(^)(UIView *))tc_SubView{
     return ^UIView *(UIView *subView){
+        
         [self addSubview:subView];
         return self;
     };

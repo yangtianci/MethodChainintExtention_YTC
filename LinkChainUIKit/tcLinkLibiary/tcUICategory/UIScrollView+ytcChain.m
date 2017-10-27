@@ -28,6 +28,195 @@
     };
 }
 
+-(void(^)())tc_RemoveFromSuperview{
+    return ^void(){
+        [self removeFromSuperview];
+    };
+}
+
+
+#pragma mark ====================== 特殊属性
+
+//CGPoint contentOffset
+-(UIScrollView *(^)(CGPoint contentOffset))tc_ContentOffset{
+    return ^UIScrollView *(CGPoint contentOffset){
+        self.contentOffset = contentOffset;
+        return self;
+    };
+}
+
+//CGSize contentSize
+-(UIScrollView *(^)(CGSize contentSize))tc_ContentSize{
+    return ^UIScrollView *(CGSize contentSize){
+        self.contentSize = contentSize;
+        return self;
+    };
+}
+
+//UIEdgeInsets contentInset
+-(UIScrollView *(^)(UIEdgeInsets contentInset))tc_ContentInset{
+    return ^UIScrollView *(UIEdgeInsets contentInset){
+        self.contentInset = contentInset;
+        return self;
+    };
+}
+
+//id<UIScrollViewDelegate> delegate
+-(UIScrollView *(^)(id<UIScrollViewDelegate> delegate))tc_Delegate{
+    return ^UIScrollView *(id<UIScrollViewDelegate> delegate){
+        self.delegate = delegate;
+        return self;
+    };
+}
+
+//BOOL directionalLockEnabled
+-(UIScrollView *(^)(BOOL directionalLockEnabled))tc_DirectionalLockEnabled{
+    return ^UIScrollView *(BOOL directionalLockEnabled){
+        self.directionalLockEnabled = directionalLockEnabled;
+        return self;
+    };
+}
+
+//BOOL bounces
+-(UIScrollView *(^)(BOOL bounces))tc_Bounces{
+    return ^UIScrollView *(BOOL bounces){
+        self.bounces = bounces;
+        return self;
+    };
+}
+
+//BOOL alwaysBounceVertical
+-(UIScrollView *(^)(BOOL alwaysBounceVertical))tc_AlwaysBounceVertical{
+    return ^UIScrollView *(BOOL alwaysBounceVertical){
+        self.alwaysBounceVertical = alwaysBounceVertical;
+        return self;
+    };
+}
+
+//BOOL alwaysBounceHorizontal
+-(UIScrollView *(^)(BOOL alwaysBounceHorizontal))tc_AlwaysBounceHorizontal{
+    return ^UIScrollView *(BOOL alwaysBounceHorizontal){
+        self.alwaysBounceHorizontal = alwaysBounceHorizontal;
+        return self;
+    };
+}
+
+//BOOL pagingEnabled
+-(UIScrollView *(^)(BOOL pagingEnabled))tc_PagingEnabled{
+    return ^UIScrollView *(BOOL pagingEnabled){
+        self.pagingEnabled = pagingEnabled;
+        return self;
+    };
+}
+
+//BOOL scrollEnabled
+-(UIScrollView *(^)(BOOL scrollEnabled))tc_ScrollEnabled{
+    return ^UIScrollView *(BOOL scrollEnabled){
+        self.scrollEnabled = scrollEnabled;
+        return self;
+    };
+}
+
+//BOOL                         showsHorizontalScrollIndicator
+-(UIScrollView *(^)(BOOL                         showsHorizontalScrollIndicator))tc_ShowsHorizontalScrollIndicator{
+    return ^UIScrollView *(BOOL                         showsHorizontalScrollIndicator){
+        self.showsHorizontalScrollIndicator = showsHorizontalScrollIndicator;
+        return self;
+    };
+}
+
+//BOOL showsVerticalScrollIndicator
+-(UIScrollView *(^)(BOOL showsVerticalScrollIndicator))tc_ShowsVerticalScrollIndicator{
+    return ^UIScrollView *(BOOL showsVerticalScrollIndicator){
+        self.showsVerticalScrollIndicator = showsVerticalScrollIndicator;
+        return self;
+    };
+}
+
+//UIEdgeInsets scrollIndicatorInsets
+-(UIScrollView *(^)(UIEdgeInsets scrollIndicatorInsets))tc_ScrollIndicatorInsets{
+    return ^UIScrollView *(UIEdgeInsets scrollIndicatorInsets){
+        self.scrollIndicatorInsets = scrollIndicatorInsets;
+        return self;
+    };
+}
+
+//UIScrollViewIndicatorStyle indicatorStyle
+-(UIScrollView *(^)(UIScrollViewIndicatorStyle indicatorStyle))tc_IndicatorStyle{
+    return ^UIScrollView *(UIScrollViewIndicatorStyle indicatorStyle){
+        self.indicatorStyle = indicatorStyle;
+        return self;
+    };
+}
+
+//CGFloat decelerationRate
+-(UIScrollView *(^)(CGFloat decelerationRate))tc_DecelerationRate{
+    return ^UIScrollView *(CGFloat decelerationRate){
+        self.decelerationRate = decelerationRate;
+        return self;
+    };
+}
+
+//UIScrollViewIndexDisplayMode indexDisplayMode
+-(UIScrollView *(^)(UIScrollViewIndexDisplayMode indexDisplayMode))tc_IndexDisplayMode{
+    return ^UIScrollView *(UIScrollViewIndexDisplayMode indexDisplayMode){
+        self.indexDisplayMode = indexDisplayMode;
+        return self;
+    };
+}
+
+//- (void)setContentOffset:(CGPoint)contentOffset animated:(BOOL)animated;
+-(UIScrollView *(^)(CGPoint contentOffset, BOOL *animated))tc_SetContentOffset{
+    return ^UIScrollView *(CGPoint contentOffset, BOOL *animated){
+        
+        [self setContentOffset:contentOffset animated:animated];
+        
+        return self;
+    };
+}
+
+//- (void)scrollRectToVisible:(CGRect)rect animated:(BOOL)animated;
+-(UIScrollView *(^)(CGRect rect, BOOL animated))tc_ScrollRectToVisible{
+    return ^UIScrollView *(CGRect rect, BOOL animated){
+        
+        [self scrollRectToVisible:rect animated:animated];
+        
+        return self;
+    };
+}
+
+//CGFloat minimumZoomScale
+-(UIScrollView *(^)(CGFloat minimumZoomScale))tc_MinimumZoomScale{
+    return ^UIScrollView *(CGFloat minimumZoomScale){
+        self.minimumZoomScale = minimumZoomScale;
+        return self;
+    };
+}
+
+//CGFloat maximumZoomScale
+-(UIScrollView *(^)(CGFloat maximumZoomScale))tc_MaximumZoomScale{
+    return ^UIScrollView *(CGFloat maximumZoomScale){
+        self.maximumZoomScale = maximumZoomScale;
+        return self;
+    };
+}
+
+//BOOL  scrollsToTop
+-(UIScrollView *(^)(BOOL scrollsToTop))tc_ScrollsToTop{
+    return ^UIScrollView *(BOOL scrollsToTop){
+        self.scrollsToTop = scrollsToTop;
+        return self;
+    };
+}
+
+//UIScrollViewKeyboardDismissMode keyboardDismissMode
+-(UIScrollView *(^)(UIScrollViewKeyboardDismissMode keyboardDismissMode))tc_KeyboardDismissMode{
+    return ^UIScrollView *(UIScrollViewKeyboardDismissMode keyboardDismissMode){
+        self.keyboardDismissMode = keyboardDismissMode;
+        return self;
+    };
+}
+
 #pragma mark ====================== 通用属性
 
 -(UIScrollView*(^)(float x,float y,float width,float height))tc_FrameValue{

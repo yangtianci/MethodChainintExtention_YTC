@@ -27,11 +27,92 @@
     };
 }
 
+-(void(^)())tc_RemoveFromSuperview{
+    return ^void(){
+        [self removeFromSuperview];
+    };
+}
+
 #pragma mark ====================== 特殊属性
 
--(UIImageView *(^)(UIImage *))tc_Image{
+-(UIImageView *(^)(UIImage *))tc_ImageObject{
     return ^UIImageView*(UIImage *img){
         self.image = img;
+        return self;
+    };
+}
+
+-(UIImageView *(^)(NSString *imgName))tc_ImageName{
+    return ^UIImageView*(NSString *imgName){
+        self.image = [UIImage imageNamed:imgName];
+        return self;
+    };
+}
+
+-(UIImageView *(^)(UIImage *))tc_HighlightedImageObject{
+    return ^UIImageView*(UIImage *img){
+        self.highlightedImage = img;
+        return self;
+    };
+}
+
+-(UIImageView *(^)(NSString *imgName))tc_HighlightedImageName{
+    return ^UIImageView*(NSString *imgName){
+        self.highlightedImage = [UIImage imageNamed:imgName];
+        return self;
+    };
+}
+
+//highlighted
+-(UIImageView *(^)(BOOL highlighted))tc_Highlighted{
+    return ^UIImageView*(BOOL highlighted){
+        self.highlighted = highlighted;
+        return self;
+    };
+}
+
+//NSArray<UIImage *> *animationImages
+-(UIImageView *(^)(NSArray<UIImage *> *animationImages))tc_AnimationImages{
+    return ^UIImageView*(NSArray<UIImage *> *animationImages){
+        self.animationImages = animationImages;
+        return self;
+    };
+}
+
+//NSArray<UIImage *> *highlightedAnimationImages
+-(UIImageView *(^)(NSArray<UIImage *> *highlightedAnimationImages))tc_HighlightedAnimationImages{
+    return ^UIImageView*(NSArray<UIImage *> *highlightedAnimationImages){
+        self.highlightedAnimationImages = highlightedAnimationImages;
+        return self;
+    };
+}
+
+//NSTimeInterval animationDuration
+-(UIImageView *(^)(NSTimeInterval animationDuration))tc_AnimationDuration{
+    return ^UIImageView*(NSTimeInterval animationDuration){
+        self.animationDuration = animationDuration;
+        return self;
+    };
+}
+
+//NSInteger animationRepeatCount
+-(UIImageView *(^)(NSInteger animationRepeatCount))tc_AnimationRepeatCount{
+    return ^UIImageView*(NSInteger animationRepeatCount){
+        self.animationRepeatCount = animationRepeatCount;
+        return self;
+    };
+}
+
+-(UIImageView *(^)())tc_StartAnimating{
+    return ^UIImageView*(){
+        [self startAnimating];
+        return self;
+    };
+}
+
+-(UIImageView *(^)())tc_StopAnimating{
+    return ^UIImageView*(){
+        [self stopAnimating];
         return self;
     };
 }
